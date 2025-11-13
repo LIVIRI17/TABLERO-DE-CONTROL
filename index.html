@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero de Control - CUCUTA MOTORS TOYOTA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <h1>CUCUTA MOTORS TOYOTA</h1>
+                <h2>Tablero de Control - Asignación de Técnicos</h2>
+            </div>
+        </header>
+
+        <div class="controls">
+            <div class="color-selector">
+                <span class="label">Color seleccionado:</span>
+                <button class="color-btn active" data-color="red" style="background-color: #dc3545;" title="Rojo"></button>
+                <button class="color-btn" data-color="yellow" style="background-color: #ffc107;" title="Amarillo"></button>
+                <button class="color-btn" data-color="blue" style="background-color: #007bff;" title="Azul"></button>
+                <button class="color-btn" data-color="clear" style="background-color: #ffffff; border: 2px solid #ccc;" title="Limpiar"></button>
+            </div>
+            <button id="clearAll" class="btn-clear">Limpiar Todo</button>
+        </div>
+
+        <div class="table-container">
+            <table id="scheduleTable">
+                <thead>
+                    <tr>
+                        <th class="technician-header">Técnicos</th>
+                        <th>7:00</th>
+                        <th>8:00</th>
+                        <th>9:00</th>
+                        <th>10:00</th>
+                        <th>11:00</th>
+                        <th>12:00</th>
+                        <th>13:00</th>
+                        <th>14:00</th>
+                        <th>15:00</th>
+                        <th>16:00</th>
+                        <th>17:00</th>
+                        <th>18:00</th>
+                        <th>18:30</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Las filas se generarán dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>© 2024 CUCUTA MOTORS TOYOTA - Sistema de Control de Asignaciones</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
